@@ -1,7 +1,7 @@
 import * as sinon from 'sinon';
 import { expect, assert } from "chai";
 import * as mocks from 'node-mocks-http';
-import { Example } from '../src/models/example.model';
+// import { Example } from '../src/models/example.model';
 import { after } from 'mocha';
 import config from "../src/config/config";
 var mongoose = require('mongoose');
@@ -20,15 +20,15 @@ describe("Model Spec", function () {
         });
     });
 
-    it('Can save a new model', async () => {
-        var example = new Example();
-        example.name = 'test';
-        var response = await example.save();
-        assert.isNotNull(response._id);
-    })
+    // it('Can save a new model', async () => {
+    //     var example = new Example();
+    //     example.name = 'test';
+    //     var response = await example.save();
+    //     assert.isNotNull(response._id);
+    // })
 
-    after(() => {
-        Example.collection.drop();
-    })
+    // after(() => {
+    //     Example.collection.drop();
+    // })
 
 });
