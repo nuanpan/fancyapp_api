@@ -12,7 +12,7 @@
     "start": "node dist/index.js",
     "build:docker": "docker build -t rjmacarthy/express-typescript-starter .",
     "docker:compose": "docker-compose up",
-    "prod": "tsc && NODE_ENV=production node dist/index.js"
+    "prod": "tsc -p src && NODE_ENV=production node dist/index.js"
   },
   "dependencies": {
     "bcrypt": "^3.0.5",

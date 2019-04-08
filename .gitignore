@@ -15,3 +15,4 @@ package-lock.json
 .vscode
 src/*.js*
 src/*/*.js*
+spec/*.spec.js*
