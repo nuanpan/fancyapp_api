@@ -13,3 +13,5 @@ bin
 !.elasticbeanstalk/*.global.yml
 package-lock.json
 .vscode
+src/*.js*
+src/*/*.js*
